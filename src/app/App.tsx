@@ -5,11 +5,11 @@ import styles from './App.module.scss'
 
 function App() {
   const dispath = useAppDispatch()
-   const items = useAppSelector(state => state.products)
+  const items = useAppSelector(state => state.products)
+  console.log(items)
 
   React.useEffect(() => {
-    const products = dispath(fetchProducts())
-    console.log(items)
+    dispath(fetchProducts())
   }, [])
 
   return (
