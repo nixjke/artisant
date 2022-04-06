@@ -16,3 +16,10 @@
     color: #828282;
   }
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -12px;
+}

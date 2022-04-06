@@ -1,0 +1,25 @@
+.container {
+  max-width: 305px;
+  margin: 22px 12px 6px 12px;
+}
+
+.card {
+  display: grid;
+}
+
+.img,
+.content {
+  width: 100%;
+  grid-area: 1/1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+}

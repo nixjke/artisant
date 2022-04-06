@@ -2,11 +2,11 @@ import React from 'react'
 import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { fetchProducts } from '../store/slices/productSlice'
 import styles from './App.module.scss'
+import Card from '../components/Card/Card'
 
 function App() {
   const dispath = useAppDispatch()
   const items = useAppSelector(state => state.products)
-  console.log(items)
 
   React.useEffect(() => {
     dispath(fetchProducts())
@@ -18,6 +18,16 @@ function App() {
         <h1>Explore</h1>
         <p>Buy and sell digital fashion NFT art</p>
       </section>
+      <main className={styles.cards}>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </main>
     </div>
   )
 }
