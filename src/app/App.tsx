@@ -19,14 +19,9 @@ function App() {
         <p>Buy and sell digital fashion NFT art</p>
       </section>
       <main className={styles.cards}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {
+          items.items.map(item => (<Card key={item.product_id} items={item} />))
+        }
       </main>
     </div>
   )

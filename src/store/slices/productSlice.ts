@@ -4,6 +4,7 @@ import axios from 'axios'
 const BASE_URL = 'https://artisant.io/api/products'
 
 export interface InitialState {
+  [x: string]: any
   items: Array<any>
   isLoading: boolean
   error: string
