@@ -14,7 +14,7 @@ function App() {
   }, [])
 
   const handleChange = () => {
-    setChecked(!checked)
+    setChecked(prevState => !prevState)
   }
 
   const filteredProducts = items.filter(item => item.additional_photos[0]?.compressed?.endsWith('.webp'))
